@@ -377,4 +377,28 @@
   .user .job {
     margin-bottom: 2rem;
   }
+
+  .gallery .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* responsive gallery belom */
+  .gallery .img-1 {
+    background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+    background-size: cover;
+    height: 100vw;
+  }
+
+  .gallery .img-2 {
+    background-image: url("images/desktop/image-gallery-orange.jpg");
+  }
+
+  .gallery .img-3 {
+    background-image: url("images/desktop/image-gallery-cone.jpg");
+  }
+
+  .gallery .img-4 {
+    background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+  }
 }
