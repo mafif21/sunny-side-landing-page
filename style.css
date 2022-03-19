@@ -1,0 +1,380 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+/* root */
+:root {
+  /* Primary */
+  --Soft-Red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --Dark-blue: hsl(198, 62%, 26%);
+  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+  /* Neutral */
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+
+  /* font */
+  --barlow: "Barlow", sans-serif;
+  --fraunces: "Fraunces", serif;
+}
+
+/* .img-jumbotron {
+} */
+
+.img-jumbotron .container-flex {
+  background-image: url("images/desktop/image-header.jpg");
+  height: 45rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topBar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 1.6rem;
+  height: 22%;
+  color: var(--White);
+}
+
+.navbar nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  font-family: var(--barlow);
+  padding: 10px 20px;
+  margin-left: 4px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.jumbotron-text {
+  display: grid;
+  justify-items: center;
+  color: var(--White);
+  text-align: center;
+}
+
+.jumbotron-text h1 {
+  font-family: var(--fraunces);
+  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+}
+
+.jumbotron-text img {
+  margin-top: 4rem;
+}
+/* end of header */
+
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0px;
+  height: max-content;
+}
+
+.images {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.egg {
+  background-image: url("images/desktop/image-transform.jpg");
+}
+
+.stand {
+  background-image: url("images/desktop/image-stand-out.jpg");
+}
+
+.design {
+  background-image: url("images/desktop/image-graphic-design.jpg");
+}
+
+.photo {
+  background-image: url("images/desktop/image-photography.jpg");
+}
+
+.about-content .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100%;
+  padding: 0px 2rem 0px 6rem;
+}
+
+.text .heading {
+  font-family: var(--fraunces);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.text .desc {
+  font-family: var(--barlow);
+  width: 85%;
+  font-size: 18px;
+  word-spacing: 1px;
+  line-height: 1.8rem;
+  margin-bottom: 3rem;
+  color: var(--Very-dark-grayish-blue);
+}
+
+.more button {
+  font-family: var(--fraunces);
+  height: 8px;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.more .yellow {
+  background-color: hsl(51, 100%, 49%, 0.2);
+}
+
+.more .pink {
+  background-color: hsl(7, 99%, 70%, 0.2);
+}
+
+/* hover */
+.navbar ul li:hover {
+  background-color: black;
+}
+
+.more .yellow:hover {
+  background-color: hsl(51, 100%, 49%);
+}
+
+.more .pink:hover {
+  background-color: hsl(7, 99%, 70%);
+}
+
+.content-job {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-content: center;
+  height: 95%;
+  text-align: center;
+  padding: 0 5rem;
+}
+
+.content-job .job-heading {
+  font-family: var(--fraunces);
+  font-size: 1.5rem;
+  color: var(--Dark-desaturated-cyan);
+}
+
+.content-job .job-desc {
+  padding: 1.5rem 4rem;
+  font-size: 18px;
+  font-family: var(--barlow);
+  line-height: 1.8rem;
+  color: var(--Dark-desaturated-cyan);
+}
+
+/* ============ */
+.testimonials .container {
+  grid-template-rows: 1fr 1.8fr;
+  display: grid;
+  padding: 0 3rem;
+  height: 40rem;
+}
+
+.testimonials .testi-title {
+  text-align: center;
+  font-size: 18px;
+  padding: 8rem 0 0rem 0;
+  font-family: var(--fraunces);
+  letter-spacing: 6px;
+  color: var(--Grayish-blue);
+}
+
+.testimonials .user-testi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem;
+  text-align: center;
+  grid-gap: 2rem;
+}
+
+.user .user-photo img {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 3rem;
+}
+
+.user .testi-desc {
+  /* padding: 1.5rem; */
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-family: var(--barlow);
+  margin-bottom: 3rem;
+  color: var(--Very-dark-grayish-blue);
+}
+
+.user .username {
+  font-family: var(--fraunces);
+  margin-bottom: 1rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.user .job {
+  font-family: var(--barlow);
+  color: var(--Grayish-blue);
+}
+
+.gallery .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallery .img-1 {
+  background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+  background-size: cover;
+}
+
+.gallery .img-2 {
+  background-image: url("images/desktop/image-gallery-orange.jpg");
+}
+
+.gallery .img-3 {
+  background-image: url("images/desktop/image-gallery-cone.jpg");
+}
+
+.gallery .img-4 {
+  background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+/* responsive */
+@media (max-width: 853px) {
+  .img-jumbotron .container-flex {
+    background-image: url("images/mobile/image-header.jpg");
+    height: 47rem;
+    background-size: cover;
+  }
+
+  .navbar nav ul {
+    display: none;
+  }
+
+  .navbar nav {
+    text-align: end;
+  }
+
+  .jumbotron-text {
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: inline;
+  }
+
+  .about .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images {
+    height: 100vw;
+  }
+
+  .egg {
+    background-image: url("images/mobile/image-transform.jpg");
+    order: 1;
+  }
+
+  .content-1 {
+    order: 2;
+  }
+
+  .stand {
+    background-image: url("images/mobile/image-stand-out.jpg");
+    order: 3;
+  }
+
+  .content-2 {
+    order: 4;
+  }
+
+  .design {
+    background-image: url("images/mobile/image-graphic-design.jpg");
+    order: 5;
+    height: 35rem;
+  }
+
+  .photo {
+    background-image: url("images/mobile/image-photography.jpg");
+    order: 6;
+    height: 35rem;
+  }
+
+  .about-content .text {
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .text .heading {
+    font-size: 2.2rem;
+  }
+
+  .text .desc {
+    width: 90%;
+  }
+
+  .content-job {
+    height: 100%;
+    padding: 0;
+  }
+
+  .content-job .job-desc {
+    padding: 2rem 1rem;
+    font-size: 18px;
+    font-family: var(--barlow);
+    line-height: 1.8rem;
+    color: var(--Dark-desaturated-cyan);
+  }
+
+  .testimonials .container {
+    padding: 0;
+  }
+
+  .testimonials .testi-title {
+    font-size: 14px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonials .user-testi {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .user .user-photo img {
+    margin-bottom: 1.5rem;
+  }
+
+  .user .testi-desc {
+    margin-bottom: 1.5rem;
+  }
+
+  .user .job {
+    margin-bottom: 2rem;
+  }
+}
