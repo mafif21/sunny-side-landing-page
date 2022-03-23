@@ -50,6 +50,7 @@
   font-family: var(--barlow);
   padding: 15px 30px;
   margin-left: 4px;
+  transition-duration: 500ms;
 }
 
 .navbar ul li:nth-child(4) {
