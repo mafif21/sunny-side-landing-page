@@ -10,6 +10,9 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
+## Deploy
+Check the preview site -> https://623b399318bba816517b0218--jovial-chimera-6e39fd.netlify.app/
+
 ## The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
