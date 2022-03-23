@@ -366,7 +366,7 @@ footer .credit a:hover {
   .hamburger-menu .hamburger-screen {
     display: flex;
     flex-direction: column;
-    width: 315px;
+    width: 85vw;
     height: 320px;
     justify-content: center;
     align-items: center;
