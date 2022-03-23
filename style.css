@@ -366,15 +366,15 @@ footer .credit a:hover {
   .hamburger-menu .hamburger-screen {
     display: flex;
     flex-direction: column;
-    width: 85vw;
+    width: 88vw;
     height: 320px;
     justify-content: center;
     align-items: center;
     background-color: var(--White);
     color: var(--Grayish-blue);
     position: absolute;
-    top: 70px;
-    right: 10px;
+    top: 71px;
+    right: -1px;
     font-size: 1.2rem;
     padding: 0rem;
     line-height: 2rem;
@@ -384,8 +384,8 @@ footer .credit a:hover {
     display: block;
     position: absolute;
     z-index: 99;
-    right: 10px;
-    top: 40px;
+    right: -1px;
+    top: 47px;
     height: 0px;
     width: 0px;
     border-top: 15px solid transparent;
@@ -509,6 +509,6 @@ footer .credit a:hover {
   }
 
   footer .credit .attribution {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
